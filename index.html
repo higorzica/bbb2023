@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BBB 2023</title>
+</head>
+<body>
+  <span id="topo"></span>
+    <header>
+      <h1 class="tituloGrande">BBB 2023</h1>
+    </header>
+    <div class="container-legenda">
+      <h3 class="subtitle">Atenção aos participantes do novo BBB 2023</h3>
+      <ul class="legenda">
+        <button class="btnLider" type="button" onclick="showLider()">
+          <li class="item-legenda "><img class="icone-legenda" src="./icones/lider.png" alt="lider"><p class="titleBtnFilter">Líder</p></li>
+        </button>
+        <button class="btnAnjo" type="button" onclick="showAnjo()">
+          <li class="item-legenda "><img class="icone-legenda" src="./icones/anjo.png" alt="anjo"><p class="titleBtnFilter"> Anjo</p></li>
+        </button>
+        <button class="btnMonstro" type="button" onclick="showMonstro()">
+          <li class="item-legenda "><img class="icone-legenda" src="./icones/monstro.png" alt="monstro"><p class="titleBtnFilter"> Monstro</p></li>
+        </button>
+        <button class="btnImunizado" type="button" onclick="showImunizado()">
+          <li class="item-legenda "><img class="icone-legenda" src="./icones/imunizado.png" alt="imunizado"><p class="titleBtnFilter"> Imunizado</p></li>
+        </button>
+        <button class="btnParedao" type="button" onclick="showParedao()">
+          <li class="item-legenda "><img class="icone-legenda" src="./icones/paredao.png" alt="paredão"><p class="titleBtnFilter"> Paredão</p></li>
+        </button>
+        <button class="btnEliminado" type="button" onclick="showEliminado()">
+          <li class="item-legenda "><img class="icone-legenda" src="./icones/eliminado.png" alt="eliminado"><p class="titleBtnFilter"> Eliminado</p></li>
+        </button>
+        <button class="btnTodos" type="button" onclick="showTodos()">
+          <li class="item-legenda "><img style="width: 64px; height:64px;" class="icone-legenda" src="./icones/favicon.png" alt="Todos"><p class="titleBtnFilter"> Ver Todos</p></li>
+        </button>
+        
+      </ul>
+    </div>
+    <main class="container">
+        <div class="cards">
+            
+          <div>
+              <a class="btn btnTopo" href="#topo">↑</a>
+          </div>
+      </div>
+    </main>
+    <footer class="rodape">
+        <p>Produzido por Higor Zica &copy; 2023 </p>
+    </footer>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>

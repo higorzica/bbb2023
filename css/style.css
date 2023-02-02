@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  html, body{
+    background: #010203;
+    font-family: 'Bebas', sans-serif;
+  }
+
+  header {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(to bottom, #04b2d9, #048abf, #023859);
+  }
+
+  button {
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .tituloGrande {
+    font-size: 42px;
+    background-image: linear-gradient(to bottom, #fcfafa, #ff9500);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    padding: 8px;
+  }
+
+  .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+  }
+
+  .cards{
+    display: flex;
+    min-width: 350px;
+    max-width: 1920px;
+    margin: 0 auto;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .card{
+    position: relative;
+    height: 300px;
+    width: 250px;
+    margin: 10px;
+    perspective: 1000px;
+    margin-top: 32px;
+  }
+  
+  .card .flip {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .flip{
+    transform: rotateY(180deg);
+  }
+  
+  .front-card, .back-card{
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .back-card{
+    transform: rotateY(180deg);
+  }
+  
+  .front-card .foto, .back-card .foto{
+    border-radius: 12px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0, 0.3);
+    -webkit-user-drag: none;
+  }
+
+.front-card span {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: rgb(1, 2, 49);
+    font-size: 2rem;
+    text-shadow: 0 0 5px rgb(161, 161, 161);
+}
+
+.textGrupoFrente {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    position: absolute;
+    top: 245px;
+    right: 1px;
+    font-weight: bold;
+}
+
+.textGrupoVerso {
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+  .border {
+    border: 1px solid red;
+  }
+
+  .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #04b2d9, #048abf, #023859);
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    box-shadow: 0 3px 3px rgb(196, 196, 196);
+  }
+
+  .btnTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .subtitle{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10px;
+  }
+
+  footer {
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+  }
+
+  .rodape{
+    display: flex;
+    align-content: flex-end;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .center{
+    text-align: center;
+    background-color: rgba(80, 79, 79, 0.2);
+  }
+
+  .situacao {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+  }
+
+  .icone{
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+  }
+
+  .bg-noir{
+    background-color: rgb(34, 34, 34);
+    border-radius: 5px;
+    border: 1px solid #fff;
+  }
+
+  .eliminado{
+    filter: grayscale(100%);
+    border: 5px solid #22222280;
+  }
+
+  .container-legenda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .legenda{
+    display: flex;
+    margin-left: 50px;
+    gap: 15px;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+ .item-legenda{
+    color: #fff;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-weight: bold;
+  }
+
+  .icone-legenda{
+    padding: 10px;
+  }
+
+  .titleBtnFilter{
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .btnLider, .btnAnjo, .btnEliminado, .btnMonstro, .btnParedao, .btnImunizado, .btnTodos{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 15px;
+  }
+
+  .btnLider:hover, .btnAnjo:hover, .btnEliminado:hover, .btnMonstro:hover, .btnParedao:hover, .btnImunizado:hover, .btnTodos:hover{
+    background-color: rgba(204, 204, 204, 0.8);
+
+  }
